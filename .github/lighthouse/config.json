@@ -1,0 +1,9 @@
+{
+	"ci": {
+		"collect": {
+			"settings": {
+				"chromeFlags": ["--force-prefers-reduced-motion"]
+			}
+		}
+	}
+}

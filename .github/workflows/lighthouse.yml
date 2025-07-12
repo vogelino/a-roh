@@ -1,0 +1,20 @@
+name: Lighthouse CI
+on:
+  deployment_status:
+jobs:
+  lighthouse:
+    if: >-
+      github.event.deployment_status.state == 'success' &&
+      github.event.deployment.environment == 'production'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: |
+            https://a-roh.com/
+          budgetPath: .github/lighthouse/budget.json
+          configPath: .github/lighthouse/config.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true
