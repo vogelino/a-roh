@@ -1,0 +1,35 @@
+---
+title: Who we are
+addresses:
+  - label: Paris
+    line1: 14 rue de l’Atlas
+    line2: 75019 – Paris (FR)
+  - label: Basel
+    line1: Bläsiring 158
+    line2: 4057 – Basel (CH)
+emails:
+  - architectes@a-roh.com
+phones:
+  - +33 (0)6 42 33 68 75
+  - +41 (0)6 42 33 68 75
+socials:
+  - label: Instagram
+    url: https://www.instagram.com/a_roh_architects/
+biographies:
+  - name: Agathe Sautet
+    bio: Agathe Sautet is an HMONP – SIA architect and teaches at ENSA Marseille.
+  - name: Matthieu Friedli
+    bio: Matthieu is an EPFL architect and teaches at EPFL in Lausanne.
+professionalCredentials: SIA et Dipl. ing. HMONP – Ordre des architectes n° S24041
+---
+
+a-roh
+
+is a practice based in Paris and Basel.
+
+Agathe Sautet is an HMONP – SIA architect and teaches at ENSA Marseille. Matthieu is an EPFL architect and teaches at EPFL in Lausanne.
+
+Together, they founded a-roh in 2024.
+
+The main focus on their work is on rehabilitation of modern buildings and public facilities. Their practice explores the possibilities of creating space through specific materials at multiple scales, from furniture to territorial projects.
+
