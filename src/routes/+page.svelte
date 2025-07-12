@@ -1,19 +1,14 @@
 <script lang="ts">
+	import ProjectRow from '$lib/components/ProjectRow.svelte';
 	import { projects } from '$lib/content/collections/collections';
 	import { aboutPage } from '$lib/content/singlePages/singlePages';
 </script>
 
-{#each projects as project}
-	<div class="project">
-		<h2>{project.title}</h2>
-		<p><strong>Location:</strong> {project.location}</p>
-		<p><strong>Status:</strong> {project.status}</p>
-		<p><strong>Client:</strong> {project.client}</p>
-		<p><strong>Size:</strong> {project.size}</p>
-		<p><strong>Year:</strong> {project.year}</p>
-		<div class="content"><project.Content /></div>
-	</div>
-{/each}
+<main class="gap-x-12 md:grid md:grid-cols-[auto_1fr_1fr] lg:grid-cols-7">
+	{#each projects as project}
+		<ProjectRow {project} />
+	{/each}
+</main>
 
 <div class="about">
 	<h2>{aboutPage.metadata.title}</h2>
