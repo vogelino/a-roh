@@ -1,28 +1,30 @@
-# sv
+# [a-roh](https://a-roh.vercel.app/)
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+**a-roh** is an architecture practice based in Paris and Basel. [a-roh.com](https://a-roh.com) its website.
 
-## Creating a project
+Agathe Sautet is an HMONP – SIA architect and teaches at ENSA Marseille. Matthieu is an EPFL architect and teaches at EPFL in Lausanne.
 
-If you're seeing this, you've probably already done this step. Congrats!
+Together, they founded a-roh in 2024.
 
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
+The main focus on their work is on rehabilitation of modern buildings and public facilities. Their practice explores the possibilities of creating space through specific materials at multiple scales, from furniture to territorial projects.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+This is a [SvelteKit](https://kit.svelte.dev/) project with the [static adapter](https://kit.svelte.dev/docs/adapters/static).
+
+To run the project locally, first clone the project, cd into it and install the dependencies:
 
 ```bash
-npm run dev
+pnpm install
+```
+
+Once you've cloned the project and installed dependencies, start the development server:
+
+```bash
+pnpm run dev
 
 # or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm run dev -- --open
 ```
 
 ## Building
@@ -30,9 +32,7 @@ npm run dev -- --open
 To create a production version of your app:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+You can preview the production build with `pnpm run preview`.
