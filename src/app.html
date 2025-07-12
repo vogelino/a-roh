@@ -4,6 +4,29 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+			// Prevent flash of light mode by applying theme before page renders
+			(function () {
+				try {
+					// Check localStorage first
+					const savedMode = localStorage.getItem('mode');
+					if (savedMode && (savedMode === 'light' || savedMode === 'dark')) {
+						document.documentElement.setAttribute('data-applied-mode', savedMode);
+						return;
+					}
+
+					// Fallback to system preference
+					if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+						document.documentElement.setAttribute('data-applied-mode', 'dark');
+					} else {
+						document.documentElement.setAttribute('data-applied-mode', 'light');
+					}
+				} catch (e) {
+					// Fallback to light mode if anything fails
+					document.documentElement.setAttribute('data-applied-mode', 'light');
+				}
+			})();
+		</script>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
