@@ -44,7 +44,7 @@ const projectSchema = z
 		status: z.string().default(''),
 		client: z.string().default(''),
 		size: z.string().default(''),
-		year: z.coerce.string().default(''),
+		date: z.coerce.date().default(new Date()),
 		Content: z.any()
 	})
 	.describe('Project');

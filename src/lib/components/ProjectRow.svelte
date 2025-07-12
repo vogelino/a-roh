@@ -11,7 +11,7 @@
 
 <article class="border-border border-b md:col-span-full md:grid md:grid-cols-subgrid">
 	<a
-		href="/projects/{project.id}"
+		href="/{project.id}"
 		class="hover:bg-muted flex flex-col gap-y-2 py-6 transition-colors md:col-span-full md:grid md:grid-cols-subgrid"
 	>
 		<h2>{project.title}</h2>
