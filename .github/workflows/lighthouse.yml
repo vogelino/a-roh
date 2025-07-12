@@ -13,7 +13,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v12
         with:
           urls: |
-            https://a-roh.com/
+            https://a-roh.vercel.app/
           budgetPath: .github/lighthouse/budget.json
           configPath: .github/lighthouse/config.json
           uploadArtifacts: true
