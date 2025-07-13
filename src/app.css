@@ -130,9 +130,7 @@
 
 	@font-face {
 		font-family: 'Suisse Intl';
-		src:
-			url('/fonts/suisse/SuisseIntl-Regular.woff2') format('woff2'),
-			url('/fonts/suisse/SuisseIntl-Regular.woff') format('woff');
+		src: url('/fonts/suisse/SuisseIntl-Regular.woff2') format('woff2');
 		font-weight: 400;
 		font-style: normal;
 		font-display: swap;
@@ -140,9 +138,7 @@
 
 	@font-face {
 		font-family: 'Suisse Intl';
-		src:
-			url('/fonts/suisse/SuisseIntl-RegularIt.woff2') format('woff2'),
-			url('/fonts/suisse/SuisseIntl-RegularIt.woff') format('woff');
+		src: url('/fonts/suisse/SuisseIntl-RegularIt.woff2') format('woff2');
 		font-weight: 400;
 		font-style: italic;
 		font-display: swap;
@@ -150,39 +146,7 @@
 
 	@font-face {
 		font-family: 'Suisse Intl';
-		src:
-			url('/fonts/suisse/SuisseIntl-Semibold.woff2') format('woff2'),
-			url('/fonts/suisse/SuisseIntl-Semibold.woff') format('woff');
-		font-weight: 700;
-		font-style: normal;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: 'Suisse Intl';
-		src:
-			url('/fonts/suisse/SuisseIntl-SemiboldIt.woff2') format('woff2'),
-			url('/fonts/suisse/SuisseIntl-SemiboldIt.woff') format('woff');
-		font-weight: 700;
-		font-style: italic;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: 'Suisse Works';
-		src:
-			url('/fonts/suisse/SuisseWorks-Regular-WebS.woff2') format('woff2'),
-			url('/fonts/suisse/SuisseWorks-Regular-WebS.woff') format('woff');
-		font-weight: 400;
-		font-style: normal;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: 'Suisse Works';
-		src:
-			url('/fonts/suisse/SuisseWorks-Bold-WebS.woff2') format('woff2'),
-			url('/fonts/suisse/SuisseWorks-Bold-WebS.woff') format('woff');
+		src: url('/fonts/suisse/SuisseIntl-Semibold.woff2') format('woff2');
 		font-weight: 700;
 		font-style: normal;
 		font-display: swap;

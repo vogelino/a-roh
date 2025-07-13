@@ -5,7 +5,6 @@
 	type Props = { project: ProjectType };
 	const { project }: Props = $props();
 
-	$inspect(project.id);
 	const projectThumbnail = $derived(getProjectThumnnail(project.id));
 </script>
 

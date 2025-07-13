@@ -24,6 +24,3 @@ vite.config.ts.timestamp-*
 
 # Husky
 /.husky/_
-
-# Licensed fonts
-/static/fonts/suisse

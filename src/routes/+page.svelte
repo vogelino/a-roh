@@ -5,7 +5,7 @@
 </script>
 
 <section class="xs:grid xs:grid-cols-2 flex flex-col sm:flex sm:flex-col">
-	{#each projects as project}
+	{#each projects as project (project.id)}
 		<ProjectRow {project} />
 	{/each}
 </section>
