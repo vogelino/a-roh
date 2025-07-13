@@ -1,0 +1,11 @@
+---
+title: Mountain Retreat Center
+typology: hospitality
+location: Davos
+status: ongoing
+client: Alpine Wellness Group
+size: 5000 m²
+date: 2025-07-01
+---
+
+A wellness retreat nestled in the Alps, offering spa facilities, meditation halls, and panoramic views of the mountains.

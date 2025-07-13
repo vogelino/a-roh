@@ -1,0 +1,11 @@
+---
+title: Historic Library Renovation
+typology: renovation
+location: Bern
+status: completed
+client: Bern City Library
+size: 4000 m²
+date: 2022-11-20
+---
+
+Restoration of a 19th-century library, preserving its heritage while adding modern amenities and accessibility features.

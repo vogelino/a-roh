@@ -24,14 +24,6 @@ const aboutSchema = z.strictObject({
 			})
 		)
 		.default([]),
-	biographies: z
-		.array(
-			z.strictObject({
-				name: z.string(),
-				bio: z.string()
-			})
-		)
-		.default([]),
 	professionalCredentials: z.string().default('')
 });
 

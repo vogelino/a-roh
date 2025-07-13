@@ -42,7 +42,7 @@ function parseImagesForSlug(slug: string, images: Record<string, ImageType>) {
 export function getProjectThumnnail(slug: string) {
 	const images = parseImagesForSlug(
 		slug,
-		import.meta.glob<ImageType>(`/src/assets/images/thumbnails/*.webp`, {
+		import.meta.glob<ImageType>(`/src/lib/assets/images/thumbnails/*.webp`, {
 			eager: true,
 			query: {
 				enhanced: true

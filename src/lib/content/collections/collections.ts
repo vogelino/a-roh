@@ -54,5 +54,7 @@ export const projects = parseSvxFolder({
 		eager: true
 	}),
 	schema: projectSchema
-}).filter((project) => !project.hidden);
+})
+	.filter((project) => !project.hidden)
+	.sort((a, b) => b.date.getTime() - a.date.getTime());
 export type ProjectType = (typeof projects)[number];

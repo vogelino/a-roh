@@ -15,15 +15,10 @@ phones:
 socials:
   - label: Instagram
     url: https://www.instagram.com/a_roh_architects/
-biographies:
-  - name: Agathe Sautet
-    bio: Agathe Sautet is an HMONP – SIA architect and teaches at ENSA Marseille.
-  - name: Matthieu Friedli
-    bio: Matthieu is an EPFL architect and teaches at EPFL in Lausanne.
 professionalCredentials: SIA et Dipl. ing. HMONP – Ordre des architectes n° S24041
 ---
 
-a-roh
+# **a-roh**
 
 is a practice based in Paris and Basel.
 

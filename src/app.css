@@ -3,7 +3,10 @@
 @import 'tw-animate-css';
 
 @theme {
-	--font-sans: 'Suisse', Helvetica, 'Inter', sans-serif;
+	--font-sans: 'Suisse Intl', Helvetica, 'Inter', sans-serif;
+	--font-headings: var(--font-sans); /* 'Suisse Works', 'Times New Roman', serif; */
+
+	--breakpoint-xs: 400px;
 }
 
 @custom-variant dark (&:is(.dark *));
@@ -119,7 +122,69 @@
 	* {
 		@apply border-border outline-ring/50;
 	}
+	html,
 	body {
-		@apply bg-background text-foreground p-4 lg:p-6;
+		@apply bg-background text-foreground m-0 p-0;
+		scroll-behavior: smooth;
+	}
+
+	@font-face {
+		font-family: 'Suisse Intl';
+		src:
+			url('/fonts/suisse/SuisseIntl-Regular.woff2') format('woff2'),
+			url('/fonts/suisse/SuisseIntl-Regular.woff') format('woff');
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Suisse Intl';
+		src:
+			url('/fonts/suisse/SuisseIntl-RegularIt.woff2') format('woff2'),
+			url('/fonts/suisse/SuisseIntl-RegularIt.woff') format('woff');
+		font-weight: 400;
+		font-style: italic;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Suisse Intl';
+		src:
+			url('/fonts/suisse/SuisseIntl-Semibold.woff2') format('woff2'),
+			url('/fonts/suisse/SuisseIntl-Semibold.woff') format('woff');
+		font-weight: 700;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Suisse Intl';
+		src:
+			url('/fonts/suisse/SuisseIntl-SemiboldIt.woff2') format('woff2'),
+			url('/fonts/suisse/SuisseIntl-SemiboldIt.woff') format('woff');
+		font-weight: 700;
+		font-style: italic;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Suisse Works';
+		src:
+			url('/fonts/suisse/SuisseWorks-Regular-WebS.woff2') format('woff2'),
+			url('/fonts/suisse/SuisseWorks-Regular-WebS.woff') format('woff');
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Suisse Works';
+		src:
+			url('/fonts/suisse/SuisseWorks-Bold-WebS.woff2') format('woff2'),
+			url('/fonts/suisse/SuisseWorks-Bold-WebS.woff') format('woff');
+		font-weight: 700;
+		font-style: normal;
+		font-display: swap;
 	}
 }

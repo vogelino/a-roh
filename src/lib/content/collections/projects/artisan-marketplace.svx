@@ -1,0 +1,11 @@
+---
+title: Artisan Marketplace
+typology: commercial
+location: Winterthur
+status: completed
+client: Winterthur Chamber of Commerce
+size: 2500 m²
+date: 2024-04-12
+---
+
+A vibrant marketplace for local artisans, featuring modular stalls, open plazas, and community workshops.

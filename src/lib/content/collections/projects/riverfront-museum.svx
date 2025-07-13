@@ -1,0 +1,11 @@
+---
+title: Riverfront Museum
+typology: cultural
+location: Geneva
+status: ongoing
+client: Geneva Arts Council
+size: 8000 m²
+date: 2024-06-01
+---
+
+A contemporary museum on the riverfront, blending art and architecture. Includes interactive exhibits and a sculpture garden.

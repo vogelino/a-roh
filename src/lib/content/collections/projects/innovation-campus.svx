@@ -1,0 +1,11 @@
+---
+title: Innovation Campus
+typology: education
+location: St. Gallen
+status: planning
+client: St. Gallen University
+size: 20000 m²
+date: 2027-02-15
+---
+
+A cutting-edge campus for research and learning, featuring collaborative labs, lecture halls, and green outdoor spaces.
