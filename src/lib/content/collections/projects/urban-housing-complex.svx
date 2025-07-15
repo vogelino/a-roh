@@ -1,5 +1,6 @@
 ---
 title: Urban Housing Complex
+seoDescription: A modern housing complex designed to foster community living. Features green rooftops, shared spaces, and energy-efficient systems.
 typology: residential
 location: Zurich
 status: completed

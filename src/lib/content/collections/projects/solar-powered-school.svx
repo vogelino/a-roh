@@ -1,5 +1,6 @@
 ---
 title: Solar Powered School
+seoDescription: A primary school powered entirely by solar energy, with outdoor classrooms and interactive learning spaces.
 typology: school
 location: Lugano
 status: ongoing

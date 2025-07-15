@@ -81,12 +81,13 @@ export function getProjectImages(slug: string) {
 export function getOgImage(slug: string) {
 	const images = parseImagesForSlug(
 		slug,
-		import.meta.glob<ImageType>(`/src/lib/assets/images/og/*.png`, {
+		import.meta.glob<ImageType>(`/src/lib/assets/images/og-images/*.png`, {
 			eager: true,
 			query: {
 				enhanced: true
 			}
-		})
+		}),
+		'png'
 	);
 	return images[0] as {
 		slug: string;

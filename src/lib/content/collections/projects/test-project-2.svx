@@ -1,5 +1,6 @@
 ---
 title: Test Project 2
+seoDescription: A test project for demonstration purposes, showcasing the structure and content of a project file.
 typology: school
 location: Basel
 status: ongoing

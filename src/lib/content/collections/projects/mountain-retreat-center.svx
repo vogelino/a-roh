@@ -1,5 +1,6 @@
 ---
 title: Mountain Retreat Center
+seoDescription: A wellness retreat nestled in the Alps, offering spa facilities, meditation halls, and panoramic views of the mountains.
 typology: hospitality
 location: Davos
 status: ongoing

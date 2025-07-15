@@ -1,5 +1,7 @@
 <script lang="ts">
+	import ogImageUrl from '$lib/assets/images/og-images/og-home.png';
 	import AboutSection from '$lib/components/AboutSection.svelte';
+	import MetaTags from '$lib/components/MetaTags.svelte';
 	import ProjectRow from '$lib/components/ProjectRow.svelte';
 	import { projects } from '$lib/content/collections/collections';
 
@@ -16,6 +18,8 @@
 		'animate-slide-up-10'
 	];
 </script>
+
+<MetaTags {ogImageUrl} path="/" />
 
 <section class="xs:grid xs:grid-cols-2 flex flex-col sm:flex sm:flex-col">
 	{#each projects as project, index (project.id)}

@@ -3,7 +3,7 @@ import rss, { type RSSFeedItem } from '@astrojs/rss';
 import type { ComponentType } from 'svelte';
 import { projects } from './content/collections/collections';
 import { componentToString } from './renderToString';
-import { getProjectImages, getProjectThumnnail, type BitmapImageType } from './utils';
+import { getOgImage, getProjectImages, getProjectThumnnail, type BitmapImageType } from './utils';
 
 function stripMarkdown(str: string) {
 	return str
@@ -15,7 +15,7 @@ function stripMarkdown(str: string) {
 
 export async function createRSSFeed(options: { title?: string; description?: string } = {}) {
 	const site = PUBLIC_BASE_URL;
-	const ogHome = undefined; // getOgImage('home');
+	const ogHome = getOgImage('og-home');
 	return rss({
 		title: options.title || 'a-roh',
 		description: `${options.description || 'Architecture practice based in Paris and Basel'}`,

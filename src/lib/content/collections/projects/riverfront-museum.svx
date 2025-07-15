@@ -1,5 +1,6 @@
 ---
 title: Riverfront Museum
+seoDescription: A contemporary museum on the riverfront, blending art and architecture. Includes interactive exhibits and a sculpture garden.
 typology: cultural
 location: Geneva
 status: ongoing

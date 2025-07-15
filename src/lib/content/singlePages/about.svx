@@ -1,5 +1,6 @@
 ---
 title: Who we are
+seoDescription: Architecture practice based in Paris and Basel founded in 2024 by Agathe Sautet and Matthieu Friedli.
 addresses:
   - label: Paris
     line1: 14 rue de l’Atlas

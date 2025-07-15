@@ -1,5 +1,6 @@
 ---
 title: Artisan Marketplace
+seoDescription: A vibrant marketplace for local artisans, featuring modular stalls, open plazas, and community workshops.
 typology: commercial
 location: Winterthur
 status: completed

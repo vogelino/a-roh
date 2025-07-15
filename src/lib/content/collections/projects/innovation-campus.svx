@@ -1,5 +1,6 @@
 ---
 title: Innovation Campus
+seoDescription: A cutting-edge campus for research and learning, featuring collaborative labs, lecture halls, and green outdoor spaces.
 typology: education
 location: St. Gallen
 status: planning

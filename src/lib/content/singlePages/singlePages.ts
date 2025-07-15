@@ -5,6 +5,7 @@ import Content, { metadata as aboutMetadata } from './about.svx';
 
 const aboutSchema = z.strictObject({
 	title: z.string(),
+	seoDescription: z.string().default(''),
 	addresses: z
 		.array(
 			z.strictObject({

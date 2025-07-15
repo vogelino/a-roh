@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import MetaTags from '$lib/components/MetaTags.svelte';
 	import ProjectImageSlider from '$lib/components/ProjectImageSlider.svelte';
-	import { cn, getProjectImages } from '$lib/utils';
+	import { cn, getProjectImages, getProjectThumnnail } from '$lib/utils';
 	import { error } from '@sveltejs/kit';
 	import type { PageProps } from './$types';
 
@@ -15,7 +16,15 @@
 	const projectContent = $derived(data.projectContent);
 
 	const projectImages = $derived(getProjectImages(project.id));
+	const projectThumbnail = $derived(getProjectThumnnail(project.id));
 </script>
+
+<MetaTags
+	title={project.title}
+	description={project.seoDescription}
+	ogImageUrl={projectThumbnail.image.img.src}
+	path={`/${project.id}/`}
+/>
 
 <section
 	class={cn(

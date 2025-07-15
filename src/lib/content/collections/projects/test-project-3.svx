@@ -1,5 +1,6 @@
 ---
 title: Test Project 3
+seoDescription: A test project for demonstration purposes, showcasing the structure and content of a project file.
 typology: administrative building
 location: Tokyo
 status: contest

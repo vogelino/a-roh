@@ -1,5 +1,6 @@
 ---
 title: Lakeside Conference Hall
+seoDescription: A state-of-the-art conference hall by the lake, designed for international summits and local gatherings.
 typology: event
 location: Lucerne
 status: completed

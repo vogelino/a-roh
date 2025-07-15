@@ -39,6 +39,7 @@ const projectSchema = z
 	.looseObject({
 		id: z.string(),
 		title: z.string(),
+		seoDescription: z.string().default(''),
 		typology: z.string().default(''),
 		location: z.string().default(''),
 		status: z.string().default(''),

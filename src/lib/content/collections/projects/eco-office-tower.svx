@@ -1,5 +1,6 @@
 ---
 title: Eco Office Tower
+seoDescription: A sustainable office tower with solar panels, rainwater harvesting, and flexible workspaces for tech startups.
 typology: office
 location: Lausanne
 status: planning
