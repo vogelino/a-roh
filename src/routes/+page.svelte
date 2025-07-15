@@ -1,12 +1,25 @@
 <script lang="ts">
+	import AboutSection from '$lib/components/AboutSection.svelte';
 	import ProjectRow from '$lib/components/ProjectRow.svelte';
-	import AboutSection from '$lib/components/ui/AboutSection.svelte';
 	import { projects } from '$lib/content/collections/collections';
+
+	const animateClasses = [
+		'animate-slide-up-1',
+		'animate-slide-up-2',
+		'animate-slide-up-3',
+		'animate-slide-up-4',
+		'animate-slide-up-5',
+		'animate-slide-up-6',
+		'animate-slide-up-7',
+		'animate-slide-up-8',
+		'animate-slide-up-9',
+		'animate-slide-up-10'
+	];
 </script>
 
 <section class="xs:grid xs:grid-cols-2 flex flex-col sm:flex sm:flex-col">
-	{#each projects as project (project.id)}
-		<ProjectRow {project} />
+	{#each projects as project, index (project.id)}
+		<ProjectRow {project} class={animateClasses[Math.min(animateClasses.length - 1, index)]} />
 	{/each}
 </section>
 

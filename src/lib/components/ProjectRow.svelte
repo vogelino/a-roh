@@ -1,19 +1,21 @@
 <script lang="ts">
 	import type { ProjectType } from '$lib/content/collections/collections';
-	import { getProjectThumnnail } from '$lib/utils';
+	import { cn, getProjectThumnnail } from '$lib/utils';
 
-	type Props = { project: ProjectType };
-	const { project }: Props = $props();
+	type Props = { project: ProjectType; class?: string };
+	const { project, class: className = '' }: Props = $props();
 
 	const projectThumbnail = $derived(getProjectThumnnail(project.id));
 </script>
 
-<article class="border-border border-b">
+<article class={cn('border-border border-b', className)}>
 	<a href="/{project.id}" class="hover:bg-muted flex flex-col gap-y-2 py-6 transition-colors">
 		<div
 			class="mx-auto flex w-full max-w-[1440px] flex-col gap-x-12 gap-y-2 px-4 sm:grid sm:grid-cols-[1fr_1fr_3fr] lg:grid-cols-7 lg:px-6"
 		>
-			<h2 class="font-headings font-bold">{project.title}</h2>
+			<h2 class="font-headings font-bold text-balance">
+				{project.title}
+			</h2>
 			<enhanced:img
 				src={projectThumbnail.image}
 				sizes="160px, 320px"

@@ -4,6 +4,7 @@
 
 @theme {
 	--font-sans: 'Suisse Intl', Helvetica, 'Inter', sans-serif;
+	--font-mono: 'Suisse Intl Mono', 'Courier New', Courier, monospace;
 	--font-headings: var(--font-sans); /* 'Suisse Works', 'Times New Roman', serif; */
 
 	--breakpoint-xs: 400px;
@@ -116,6 +117,17 @@
 	--color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
 	--color-sidebar-border: var(--sidebar-border);
 	--color-sidebar-ring: var(--sidebar-ring);
+
+	--animate-slide-up-1: slide-up 0.3s cubic-bezier(0.16, 1, 0.3, 1) 0ms both;
+	--animate-slide-up-2: slide-up 0.3s cubic-bezier(0.16, 1, 0.3, 1) 52ms both;
+	--animate-slide-up-3: slide-up 0.3s cubic-bezier(0.16, 1, 0.3, 1) 100ms both;
+	--animate-slide-up-4: slide-up 0.3s cubic-bezier(0.16, 1, 0.3, 1) 140ms both;
+	--animate-slide-up-5: slide-up 0.3s cubic-bezier(0.16, 1, 0.3, 1) 172ms both;
+	--animate-slide-up-6: slide-up 0.3s cubic-bezier(0.16, 1, 0.3, 1) 200ms both;
+	--animate-slide-up-7: slide-up 0.3s cubic-bezier(0.16, 1, 0.3, 1) 222ms both;
+	--animate-slide-up-8: slide-up 0.3s cubic-bezier(0.16, 1, 0.3, 1) 238ms both;
+	--animate-slide-up-9: slide-up 0.3s cubic-bezier(0.16, 1, 0.3, 1) 248ms both;
+	--animate-slide-up-10: slide-up 0.3s cubic-bezier(0.16, 1, 0.3, 1) 250ms both;
 }
 
 @layer base {
@@ -150,5 +162,24 @@
 		font-weight: 700;
 		font-style: normal;
 		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Suisse Intl Mono';
+		src: url('/fonts/suisse/SuisseIntlMono-Regular-WebS.woff2') format('woff2');
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@keyframes slide-up {
+		0% {
+			opacity: 0;
+			transform: translateY(1rem);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
 	}
 }

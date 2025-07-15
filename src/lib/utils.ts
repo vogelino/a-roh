@@ -30,9 +30,16 @@ export type ImageType = {
 	default: SvelteHTMLElements['enhanced:img']['src'];
 };
 
-function parseImagesForSlug(slug: string, images: Record<string, ImageType>) {
+function parseImagesForSlug(
+	slug: string,
+	images: Record<string, ImageType>,
+	extension: string = 'webp'
+) {
 	return Object.entries(images)
-		.filter(([url]) => url.includes(`${slug}.webp`))
+		.filter(([url]) => {
+			const regex = new RegExp(`${slug}(-\\d{3})?\\.${extension}$`);
+			return regex.test(url);
+		})
 		.map(([url, image]) => ({
 			slug: url,
 			image: image.default
@@ -49,5 +56,40 @@ export function getProjectThumnnail(slug: string) {
 			}
 		})
 	);
-	return images[0];
+	return images[0] as {
+		slug: string;
+		image: BitmapImageType;
+	};
+}
+
+export function getProjectImages(slug: string) {
+	return parseImagesForSlug(
+		'artisan-marketplace', // TODO: Remove hardcoded slug
+		import.meta.glob<ImageType>(`/src/lib/assets/images/projects-media/**/*.jpg`, {
+			eager: true,
+			query: {
+				enhanced: true
+			}
+		}),
+		'jpg'
+	) as {
+		slug: string;
+		image: BitmapImageType;
+	}[];
+}
+
+export function getOgImage(slug: string) {
+	const images = parseImagesForSlug(
+		slug,
+		import.meta.glob<ImageType>(`/src/lib/assets/images/og/*.png`, {
+			eager: true,
+			query: {
+				enhanced: true
+			}
+		})
+	);
+	return images[0] as {
+		slug: string;
+		image: BitmapImageType;
+	};
 }

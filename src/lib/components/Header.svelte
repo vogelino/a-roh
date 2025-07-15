@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import { cn } from '$lib/utils';
+	import ModeToggle from './ModeToggle.svelte';
 
 	let logoRef = $state<HTMLAnchorElement | null>(null);
 
@@ -27,18 +29,51 @@
 </script>
 
 <header
-	class="@container sticky top-0 mx-auto grid max-w-[1440px] grid-cols-[auto_1fr] items-center px-4 py-6 mix-blend-difference lg:px-6"
+	class="sticky top-0 z-10 mx-auto grid max-w-[1440px] grid-cols-[1fr_auto] items-center gap-4 px-4 py-6 lg:gap-6 lg:px-6"
+	style="view-transition-name: header;"
 >
-	<a
-		bind:this={logoRef}
-		{href}
-		title="a-roh homepage"
-		class="text-background grid grid-cols-[auto_1fr_auto] items-center gap-0.5 font-bold"
-	>
-		<span>a</span>
-		<span class="bg-background inline-block h-[2px] w-[var(--logoLineWidth,6px)] translate-y-px"
-		></span>
-		<span>roh</span>
-	</a>
-	<span></span>
+	<div class="@container">
+		<a
+			bind:this={logoRef}
+			{href}
+			title="a-roh homepage"
+			class="text-foreground inline-flex h-10 -translate-x-4 items-center gap-0.5 rounded-full px-4 font-bold"
+		>
+			<span>a</span>
+			<span class="bg-foreground h-[2px] w-[var(--logoLineWidth,6px)] translate-y-px"></span>
+			<span>roh</span>
+		</a>
+	</div>
+	<div class="flex items-center gap-2">
+		<ModeToggle />
+		{#if page.route.id !== '/'}
+			<a
+				href="/"
+				class={cn(
+					'flex h-10 w-10 items-center justify-center rounded-full',
+					'hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-none',
+					'text-muted-foreground hover:text-foreground focus-visible:text-foreground',
+					'hover:bg-muted focus-visible:bg-muted transition-colors'
+				)}
+				aria-label="Back to home"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="lucide lucide-x"
+					style="vector-effect: non-scaling-stroke;"
+				>
+					<path d="M18 6 6 18"></path>
+					<path d="m6 6 12 12"></path>
+				</svg>
+			</a>
+		{/if}
+	</div>
 </header>

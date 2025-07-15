@@ -47,8 +47,8 @@
 			classes: {
 				arrow: cn(
 					'flex size-8 items-center justify-center rounded-full absolute top-1/2 -translate-y-1/2 z-10',
-					'bg-background text-muted-foreground opacity-100 p-1.5 cursor-pointer',
-					'hover:text-foreground focus-visible:text-foreground',
+					'bg-background [&_path]:fill-muted-foreground [&_path]:transition-colors opacity-100 p-1.5 cursor-pointer',
+					'[&:hover_path]:fill-foreground [&:focus-visible_pat]:fill-foreground',
 					'hover:bg-muted focus-visible:bg-muted transition-colors',
 					'focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-foreground'
 				),
@@ -57,7 +57,7 @@
 				pagination: 'splide__pagination translate-y-9',
 				page: cn(
 					'size-2 rounded-full inline-block m-0.75 transition-opacity',
-					'bg-foreground opacity-30 [&.is-active]:opacity-90 hover:opacity-100 focus-visible:opacity-100',
+					'bg-foreground opacity-20 scale-80 [&.is-active]:scale-100 [&.is-active]:opacity-90 hover:opacity-100 focus-visible:opacity-100',
 					'cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-foreground'
 				),
 				...(options.classes || {})

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import ProjectRow from '$lib/components/ProjectRow.svelte';
+	import ProjectImageSlider from '$lib/components/ProjectImageSlider.svelte';
+	import { cn, getProjectImages } from '$lib/utils';
 	import { error } from '@sveltejs/kit';
 	import type { PageProps } from './$types';
 
@@ -11,6 +12,69 @@
 	}
 
 	const project = $derived(data.project);
+	const projectContent = $derived(data.projectContent);
+
+	const projectImages = $derived(getProjectImages(project.id));
 </script>
 
-<ProjectRow {project} />
+<section
+	class={cn(
+		'relative mx-auto max-w-[1440px] px-4 py-6 lg:grid lg:grid-cols-[2fr_5fr] lg:gap-x-12 lg:px-6',
+		'flex flex-col-reverse gap-12'
+	)}
+>
+	<div class="flex flex-col justify-center">
+		<h1
+			class="font-headings animate-slide-up-1 mb-1 font-bold text-balance"
+			style={`view-transition-name: project-title-${project.id};`}
+		>
+			{project.title}
+		</h1>
+		<div class="animate-slide-up-2 [&>p]:text-pretty">
+			{@html projectContent}
+		</div>
+		<dl class={cn(`text-muted-foreground mt-8 grid grid-cols-[auto_1fr] font-mono text-xs`)}>
+			<dt class="border-border motion-safe:animate-slide-up-3 border-t py-2 pr-6 uppercase">
+				Typology
+			</dt>
+			<dd
+				class="border-border motion-safe:animate-slide-up-3 border-t py-2 @xs/sidebar:border-t @xs/sidebar:py-2"
+			>
+				{project.typology}
+			</dd>
+			<dt class="border-border motion-safe:animate-slide-up-4 border-t py-2 pr-6 uppercase">
+				Location
+			</dt>
+			<dd
+				class="border-border motion-safe:animate-slide-up-4 border-t py-2 @xs/sidebar:border-t @xs/sidebar:py-2"
+			>
+				{project.location}
+			</dd>
+			<dt class="border-border motion-safe:animate-slide-up-5 border-t py-2 pr-6 uppercase">
+				Status
+			</dt>
+			<dd
+				class="border-border motion-safe:animate-slide-up-5 border-t py-2 @xs/sidebar:border-t @xs/sidebar:py-2"
+			>
+				{project.status}
+			</dd>
+			<dt class="border-border motion-safe:animate-slide-up-6 border-t py-2 pr-6 uppercase">
+				Client
+			</dt>
+			<dd
+				class="border-border motion-safe:animate-slide-up-6 border-t py-2 @xs/sidebar:border-t @xs/sidebar:py-2"
+			>
+				{project.client}
+			</dd>
+			<dt class="border-border motion-safe:animate-slide-up-7 border-t py-2 pr-6 uppercase">
+				Size
+			</dt>
+			<dd
+				class="border-border motion-safe:animate-slide-up-7 border-t py-2 @xs/sidebar:border-t @xs/sidebar:py-2"
+			>
+				{project.size}
+			</dd>
+		</dl>
+	</div>
+	<ProjectImageSlider images={projectImages} class="animate-slide-up-4" />
+</section>

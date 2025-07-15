@@ -61,7 +61,7 @@
 			<button
 				onclick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
 				class={cn(
-					'absolute top-12 right-2 z-10 flex h-12 w-12 items-center justify-center rounded-full lg:top-22',
+					'absolute top-12 right-5 z-10 flex h-10 w-10 items-center justify-center rounded-full lg:top-22',
 					'hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-none',
 					'text-muted-foreground hover:text-foreground focus-visible:text-foreground',
 					'hover:bg-muted focus-visible:bg-muted transition-colors'
