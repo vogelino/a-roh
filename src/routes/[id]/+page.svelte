@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { afterNavigate } from '$app/navigation';
 	import { page } from '$app/state';
 	import MetaTags from '$lib/components/MetaTags.svelte';
 	import ProjectImageSlider from '$lib/components/ProjectImageSlider.svelte';
@@ -17,6 +18,10 @@
 
 	const projectImages = $derived(getProjectImages(project.id));
 	const projectThumbnail = $derived(getProjectThumnnail(project.id));
+
+	afterNavigate(() => {
+		window.scrollTo(0, 0);
+	});
 </script>
 
 <MetaTags

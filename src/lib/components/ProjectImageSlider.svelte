@@ -54,7 +54,7 @@
 				),
 				prev: 'right-full -translate-x-2 -scale-x-100',
 				next: 'left-full translate-x-2',
-				pagination: 'splide__pagination translate-y-9',
+				pagination: 'splide__pagination translate-y-10',
 				page: cn(
 					'size-2 rounded-full inline-block m-0.75 transition-opacity',
 					'bg-foreground opacity-20 scale-80 [&.is-active]:scale-100 [&.is-active]:opacity-90 hover:opacity-100 focus-visible:opacity-100',

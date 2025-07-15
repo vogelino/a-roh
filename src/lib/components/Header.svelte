@@ -26,6 +26,19 @@
 
 		return () => fr && cancelAnimationFrame(fr);
 	});
+
+	function onLogoClick(event: MouseEvent) {
+		if (page.url.pathname === '/' && href === '#about') {
+			event.preventDefault();
+			const aboutTop = document.querySelector('#about')?.getBoundingClientRect().top || 0;
+			window.scrollTo({
+				top: aboutTop + window.scrollY,
+				behavior: 'smooth'
+			});
+		} else if (href === '/#') {
+			window.scrollTo({ top: 0 });
+		}
+	}
 </script>
 
 <header
@@ -38,6 +51,7 @@
 			{href}
 			title="a-roh homepage"
 			class="text-foreground inline-flex h-10 -translate-x-4 items-center gap-0.5 rounded-full px-4 font-bold"
+			onclick={onLogoClick}
 		>
 			<span>a</span>
 			<span class="bg-foreground h-[2px] w-[var(--logoLineWidth,6px)] translate-y-px"></span>
