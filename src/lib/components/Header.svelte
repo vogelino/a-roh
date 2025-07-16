@@ -42,7 +42,11 @@
 </script>
 
 <header
-	class="sticky top-0 z-10 mx-auto grid max-w-[1440px] grid-cols-[1fr_auto] items-center gap-4 px-4 py-6 lg:gap-6 lg:px-6"
+	class={cn(
+		'sticky top-0 z-10 mx-auto px-4 py-6 lg:gap-6 lg:px-6',
+		'grid max-w-[1440px] grid-cols-[1fr_auto] items-center gap-4',
+		'mix-blend-difference'
+	)}
 	style="view-transition-name: header;"
 >
 	<div class="@container">
@@ -50,11 +54,13 @@
 			bind:this={logoRef}
 			{href}
 			title="a-roh homepage"
-			class="text-foreground inline-flex h-10 -translate-x-4 items-center gap-0.5 rounded-full px-4 font-bold"
+			class="text-background dark:text-foreground inline-flex h-10 -translate-x-4 items-center gap-0.5 rounded-full px-4 font-bold"
 			onclick={onLogoClick}
 		>
 			<span>a</span>
-			<span class="bg-foreground h-[2px] w-[var(--logoLineWidth,6px)] translate-y-px"></span>
+			<span
+				class="bg-background dark:bg-foreground h-[2px] w-[var(--logoLineWidth,6px)] translate-y-px"
+			></span>
 			<span>roh</span>
 		</a>
 	</div>

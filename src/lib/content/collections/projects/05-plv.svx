@@ -1,0 +1,12 @@
+---
+title: TINGUELY
+seoDescription: Explore an innovative shared house design where three families coexist under one pitched roof. This compact living solution masterfully balances privacy and communal spaces through a clever functional core and wooden structural design.
+type: Shared House
+location: Pont-la-Ville, CH
+status: Schematic Design
+client: Private
+size: 280
+pubDate: 2025-07-16
+---
+
+Three families living under the same pitched roof generates a spatial composition that must meet the challenges of a compact shared house : privacy, common spaces and access to the garden. The apartments are separated by a functional and distributive core that disrups the repetitive wooden structure to open up views.

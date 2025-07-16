@@ -1,5 +1,5 @@
 <script lang="ts">
-	import arohLeads from '$lib/assets/images/thumbnails/test-project-2.webp?enhanced';
+	import arohLeads from '$lib/assets/images/a-roh_bio_pic_by_nikita_thevoz.jpg?enhanced';
 	import { aboutPage } from '$lib/content/singlePages/singlePages';
 	import { cn } from '$lib/utils';
 </script>
@@ -15,19 +15,37 @@
 	<h2 class="font-headings font-bold text-balance">
 		{aboutPage.metadata.title}
 	</h2>
-	<enhanced:img
-		src={arohLeads}
-		alt="a-roh lead architects"
-		class="max-h-[50svh] w-full object-contain object-left-top sm:aspect-square"
-	/>
+	<figure class="group flex flex-col gap-2">
+		<enhanced:img
+			src={arohLeads}
+			alt="a-roh lead architects"
+			class="max-h-[50svh] w-full object-contain sm:aspect-square"
+		/>
+		<figcaption
+			class={cn(
+				'text-muted-foreground text-center text-xs tracking-tight opacity-50 transition-opacity',
+				'group-hover:opacity-100'
+			)}
+		>
+			© {aboutPage.metadata.photoCopyright}
+		</figcaption>
+	</figure>
 	<div class="pt-8 sm:contents">
 		<div class="flex flex-col justify-between gap-6 lg:col-span-3">
-			<div class="[&>h1]:font-headings flex flex-col gap-6">
+			<div
+				class={cn(
+					'[&>p]:text-pretty',
+					'[&>h1]:font-headings [&>h1]:mt-4 [&>h1]:font-bold [&>h1]:text-balance [&>h1]:first:mt-0',
+					'[&>h2]:font-headings [&>h2]:mt-4 [&>h2]:font-bold [&>h2]:text-balance [&>h2]:first:mt-0',
+					'[&>h3]:font-headings [&>h3]:mt-4 [&>h3]:font-bold [&>h3]:text-balance [&>h3]:first:mt-0',
+					'[&>h4]:font-headings [&>h4]:mt-4 [&>h4]:font-bold [&>h4]:text-balance [&>h4]:first:mt-0',
+					'flex flex-col gap-2'
+				)}
+			>
 				<aboutPage.Content />
 			</div>
-			<p class="mt-6">{aboutPage.metadata.professionalCredentials}</p>
 		</div>
-		<div class="flex flex-col gap-6 pt-12 lg:col-span-2">
+		<div class="flex flex-col gap-6 pt-8 lg:col-span-2">
 			<ul>
 				{#each aboutPage.metadata.emails as email}
 					<li><a href="mailto:{email}">{email}</a></li>
@@ -53,8 +71,9 @@
 						<a
 							href={social.url}
 							class="decoration-muted-foreground hover:decoration-foreground underline underline-offset-2 transition-colors"
-							>{social.label}</a
 						>
+							{social.label}
+						</a>
 					</li>
 				{/each}
 			</ul>

@@ -4,6 +4,7 @@
 	import MetaTags from '$lib/components/MetaTags.svelte';
 	import ProjectRow from '$lib/components/ProjectRow.svelte';
 	import { projects } from '$lib/content/collections/collections';
+	import { cn } from '$lib/utils';
 
 	const animateClasses = [
 		'animate-slide-up-1',
@@ -21,7 +22,12 @@
 
 <MetaTags {ogImageUrl} path="/" />
 
-<section class="xs:grid xs:grid-cols-2 flex flex-col sm:flex sm:flex-col">
+<section
+	class={cn(
+		'xs:grid xs:grid-cols-2 flex flex-col sm:flex sm:flex-col',
+		'border-foreground border-t-2'
+	)}
+>
 	{#each projects as project, index (project.id)}
 		<ProjectRow {project} class={animateClasses[Math.min(animateClasses.length - 1, index)]} />
 	{/each}

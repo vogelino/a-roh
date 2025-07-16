@@ -37,8 +37,7 @@ function parseImagesForSlug(
 ) {
 	return Object.entries(images)
 		.filter(([url]) => {
-			const regex = new RegExp(`${slug}(-\\d{3})?\\.${extension}$`);
-			return regex.test(url);
+			return url.includes(slug) && url.endsWith(`.${extension}`);
 		})
 		.map(([url, image]) => ({
 			slug: url,
@@ -49,12 +48,13 @@ function parseImagesForSlug(
 export function getProjectThumnnail(slug: string) {
 	const images = parseImagesForSlug(
 		slug,
-		import.meta.glob<ImageType>(`/src/lib/assets/images/thumbnails/*.webp`, {
+		import.meta.glob<ImageType>(`/src/lib/assets/images/projects-media/**/*.jpg`, {
 			eager: true,
 			query: {
 				enhanced: true
 			}
-		})
+		}),
+		'jpg'
 	);
 	return images[0] as {
 		slug: string;
@@ -64,7 +64,7 @@ export function getProjectThumnnail(slug: string) {
 
 export function getProjectImages(slug: string) {
 	return parseImagesForSlug(
-		'artisan-marketplace', // TODO: Remove hardcoded slug
+		slug,
 		import.meta.glob<ImageType>(`/src/lib/assets/images/projects-media/**/*.jpg`, {
 			eager: true,
 			query: {

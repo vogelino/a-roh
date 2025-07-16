@@ -42,51 +42,41 @@
 			class="font-headings animate-slide-up-1 mb-1 font-bold text-balance"
 			style={`view-transition-name: project-title-${project.id};`}
 		>
-			{project.title}
+			{@html project.title}
 		</h1>
-		<div class="animate-slide-up-2 [&>p]:text-pretty">
+		<div class="animate-slide-up-2 [&>p]:mb-2 [&>p]:text-pretty">
 			{@html projectContent}
 		</div>
 		<dl class={cn(`text-muted-foreground mt-8 grid grid-cols-[auto_1fr] font-mono text-xs`)}>
-			<dt class="border-border motion-safe:animate-slide-up-3 border-t py-2 pr-6 uppercase">
-				Typology
-			</dt>
+			<dt class="border-border motion-safe:animate-slide-up-3 border-t py-2 pr-6">Type</dt>
 			<dd
 				class="border-border motion-safe:animate-slide-up-3 border-t py-2 @xs/sidebar:border-t @xs/sidebar:py-2"
 			>
-				{project.typology}
+				{@html project.type}
 			</dd>
-			<dt class="border-border motion-safe:animate-slide-up-4 border-t py-2 pr-6 uppercase">
-				Location
-			</dt>
+			<dt class="border-border motion-safe:animate-slide-up-4 border-t py-2 pr-6">Location</dt>
 			<dd
 				class="border-border motion-safe:animate-slide-up-4 border-t py-2 @xs/sidebar:border-t @xs/sidebar:py-2"
 			>
-				{project.location}
+				{@html project.location}
 			</dd>
-			<dt class="border-border motion-safe:animate-slide-up-5 border-t py-2 pr-6 uppercase">
-				Status
-			</dt>
+			<dt class="border-border motion-safe:animate-slide-up-5 border-t py-2 pr-6">Status</dt>
 			<dd
 				class="border-border motion-safe:animate-slide-up-5 border-t py-2 @xs/sidebar:border-t @xs/sidebar:py-2"
 			>
-				{project.status}
+				{@html project.status}
 			</dd>
-			<dt class="border-border motion-safe:animate-slide-up-6 border-t py-2 pr-6 uppercase">
-				Client
-			</dt>
+			<dt class="border-border motion-safe:animate-slide-up-6 border-t py-2 pr-6">Client</dt>
 			<dd
 				class="border-border motion-safe:animate-slide-up-6 border-t py-2 @xs/sidebar:border-t @xs/sidebar:py-2"
 			>
-				{project.client}
+				{@html project.client}
 			</dd>
-			<dt class="border-border motion-safe:animate-slide-up-7 border-t py-2 pr-6 uppercase">
-				Size
-			</dt>
+			<dt class="border-border motion-safe:animate-slide-up-7 border-t py-2 pr-6">Size</dt>
 			<dd
 				class="border-border motion-safe:animate-slide-up-7 border-t py-2 @xs/sidebar:border-t @xs/sidebar:py-2"
 			>
-				{project.size}
+				{@html project.size}
 			</dd>
 		</dl>
 	</div>

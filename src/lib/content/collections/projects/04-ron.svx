@@ -1,0 +1,14 @@
+---
+title: RONDO
+seoDescription: Experience Rondo, an innovative circular seating arrangement crafted from reclaimed workshop wood. These stackable chairs feature unique trapezoid seats that form a perfect circle, promoting inclusive dialogue through thoughtful design and sustainable materials.
+type: Stackable Chairs
+location: Berlin, DE
+status: Completed
+client: Private
+size: 12
+pubDate: 2025-07-16
+---
+
+Rondo is a space delimited by a set of chairs forming an elementary shape: a circle. This shape enables a non-hierarchical exchange between several individuals. Each chair has an isosceles trapezoid seat, integrating the idea of the circle as a whole. The chairs are made from various off-cuts of wood from a wood workshop in which the project was developed. The blue paint unifies and protects the different types of wood.
+
+In collaboration with Noibau

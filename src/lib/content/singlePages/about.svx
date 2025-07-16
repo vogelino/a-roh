@@ -5,9 +5,6 @@ addresses:
   - label: Paris
     line1: 14 rue de l’Atlas
     line2: 75019 – Paris (FR)
-  - label: Basel
-    line1: Bläsiring 158
-    line2: 4057 – Basel (CH)
 emails:
   - architectes@a-roh.com
 phones:
@@ -16,16 +13,46 @@ phones:
 socials:
   - label: Instagram
     url: https://www.instagram.com/a_roh_architects/
-professionalCredentials: SIA et Dipl. ing. HMONP – Ordre des architectes n° S24041
+photoCopyright: Nikita Thévoz
 ---
 
 # **a-roh**
 
-is a practice based in Paris and Basel.
-
-Agathe Sautet is an HMONP – SIA architect and teaches at ENSA Marseille. Matthieu is an EPFL architect and teaches at EPFL in Lausanne.
+is a practice based in Paris and Lausanne. Agathe Sautet is an HMONP – SIA architect and currently teaches at ENSA Versailles. Matthieu is an EPFL architect and currently teaches at EPFL in Lausanne.
 
 Together, they founded a-roh in 2024.
 
-The main focus on their work is on rehabilitation of modern buildings and public facilities. Their practice explores the possibilities of creating space through specific materials at multiple scales, from furniture to territorial projects.
+The main focus on their work is on rehabilitation of existing buildings and public facilities. Their practice explores the possibilities of creating space through specific materials at multiple scales, from furniture to territorial projects.
 
+Previously with us : Juliette Fabbri, Lucie Moulin
+
+SIA et Dipl. ing. HMONP – Ordre des architectes n° S24041
+
+## teaching & lectures
+
+- Design studio, S6 P32 at ENSA Versailles, 2025-Now
+- Studio director, at ALICE EPFL, 2024-2026
+- Design studio, S6 P32 at ENSA Marseille, 2024-2025
+- Guest critic at ENSA Malaquais, 03.2025
+- Guest crit at ENSA Lille, 06.2024
+
+## exhibitions & publications
+
+- Contribution to Biennale d'architecture et de paysage 2025, 4 degrés entre toi et moi, Sana Frini & Philippe Rahm
+- Contribution to Tatiana Bilbao Estudio exhibition at the Museum für Gestaltung in Zürich
+
+## collaborations & friends
+
+- Noibau (Berlin)
+- Atelier Simplon (Lausanne)
+- Atelier Alexandre Puech (Paris)
+- ONOMIAU / Noël Picaper (Paris)
+- detritus. (Lausanne)
+
+## credits & copyright
+
+- Website: Lucas Vogel
+- Team photo: Nikita Thévoz
+- Typeface: Swiss Typefaces
+
+©2025 - a-roh - all rights reserved

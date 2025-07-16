@@ -1,0 +1,14 @@
+---
+title: IMPLUVIUM
+seoDescription: Discover a unique rural public center in Fontenay-Mauvoisin, where three massive volumes frame a central space inspired by historic washhouses. This innovative design celebrates water conservation through architectural storytelling.
+type: Rural Public Center
+location: Île-de-France, FR
+status: Ongoing
+client: Fontenay-Mauvoisin
+size: 350
+pubDate: 2025-07-16
+---
+
+Surrounded by three massive volumes, a generous central space opens onto the vast rural territory. The large wooden framework covering the hall takes the form of an 18th-century public washhouse, situated nearby. The relationship with water is ritualized, making explicit the scarcity of this collective resource.
+
+In collaboration with Atelier Alexander Puech

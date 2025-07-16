@@ -1,0 +1,14 @@
+---
+title: NAGEL
+seoDescription: Experience an innovative art school in the heart of the city, where two striking volumes divided by an urban street create a unique creative sanctuary. Dark perforated steel mesh defines this dynamic space, seamlessly blending private artistic exploration with public exhibition areas.
+type: Art School
+location: Melbourne, AUS
+status: Competition,<br/>1st prize
+client: Buildner
+size: 1200
+pubDate: 2025-07-16
+---
+
+Defined by precise perimeter in dark perforated steel mesh, the art school opens onto the city through the existing street that divide the plot. This radical cut generates two volumes that face each other. Combining moments of personal experimentation with public exhibitions, the art school acts as a small island of creation in the middle of the city.
+
+In collaboration with Clara Berthaud

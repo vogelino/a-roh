@@ -1,0 +1,14 @@
+---
+title: SADI
+type: Coffee Table
+location: Paris, FR
+status: Completed
+client: Private
+size: 1
+seoDescription: Transform industrial waste into functional design with this innovative coffee table, crafted from repurposed L-shaped steel elements. This sustainable furniture piece showcases how manufacturing scraps from windows, railings, and roofing can be reimagined into versatile, mobile home decor.
+pubDate: 2025-07-16
+---
+
+Contemporary industrial production generates massive amount unused waste. These small scraps from larger elements such as window frames, railings or roofing elements can be used to design smaller pieces of furniture. Made from four L-shaped steel elements, this coffee table is easily movable. The tabletop is whatever you have around.
+
+In collaboration with Baptiste Pernot

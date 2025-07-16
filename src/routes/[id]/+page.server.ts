@@ -9,8 +9,8 @@ export const prerender = true;
 type ProjectWithContentType = ProjectType & { Content?: ComponentType };
 
 export const load: PageServerLoad = async ({ params }) => {
-	const sortedProjects = projects.sort(
-		(a, b) => b.date.getTime() - a.date.getTime()
+	const sortedProjects = projects.sort((a, b) =>
+		a.id.localeCompare(b.id)
 	) as ProjectWithContentType[];
 	const currentIndex = sortedProjects.findIndex((p) => p.id === params.id);
 	if (currentIndex === -1) {

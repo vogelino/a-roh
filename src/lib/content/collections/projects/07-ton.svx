@@ -1,0 +1,12 @@
+---
+title: TONI
+seoDescription: Discover sustainable furniture design at Zürich's Museum für Gestaltung, featuring bespoke stools crafted from reclaimed wood. These easily transportable pieces showcase innovative assembly methods and environmental consciousness.
+type: Furniture design
+location: Zürich, CH
+status: Completed
+client: Museum für Gestaltung
+size: 80
+pubDate: 2025-07-16
+---
+
+Design and production of stools for the presentation of Tatiana Bilbao Estudio's work at the Museum für Gestaltung in Zürich. The stools are made of reclaimed wood from a temporary installation in the Valais region, and their simple assembly makes them easy to transport.

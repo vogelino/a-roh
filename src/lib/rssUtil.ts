@@ -49,13 +49,13 @@ async function getRSSProjectItems(site: string): Promise<RSSFeedItem[]> {
 			const content = await getProjectHTMLContentBySlug(p.id, site);
 			return {
 				title: `New project: ${title}!`,
-				pubDate: p.date,
+				pubDate: p.pubDate,
 				description: [ogImage ? imageString : ''].join(' '),
 				link: `/projects/${p.id}/`,
 				enclosure: getEnclosureByImage(site, ogImage.image),
 				content,
 				customData: ogImage && `<webfeeds:cover image="${site}${ogImage.image.img.src}" />`,
-				categories: [p.typology, p.location, p.status, p.client, p.size]
+				categories: [p.type, p.location, p.status, p.client, p.size]
 			} satisfies RSSFeedItem;
 		})
 	);

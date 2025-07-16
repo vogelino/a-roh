@@ -25,7 +25,7 @@ const aboutSchema = z.strictObject({
 			})
 		)
 		.default([]),
-	professionalCredentials: z.string().default('')
+	photoCopyright: z.string().default('')
 });
 
 export const aboutPage = {

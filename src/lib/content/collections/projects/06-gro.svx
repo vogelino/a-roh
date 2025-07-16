@@ -1,0 +1,12 @@
+---
+title: MILLE PLATEAUX
+seoDescription: Experience a revolutionary primary school extension in Grône that harmoniously integrates with the landscape. This innovative design features multi-level access, diverse outdoor spaces, and a rooftop schoolyard offering stunning views of the Rhône valley.
+type: Primary School
+location: Grône, CH
+status: Competition
+client: Canton Valais
+size: 1600
+pubDate: 2025-07-16
+---
+
+The project aims to further develop a school campus by rethinking the entire site as a succession of heterogeneous and climatic outdoor spaces. The proposed school extension takes advantage of the site's topography to provide ground-level access to both levels. The toit-terrasse is used as a schoolyard and acts as a belvedere overlooking the Rhône valley.

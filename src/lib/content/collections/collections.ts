@@ -1,3 +1,4 @@
+import slugify from 'slugify';
 import { z } from 'zod/v4';
 
 const globResultSchema = z
@@ -22,7 +23,7 @@ function parseSvxFolder<Sch extends z.ZodType>(params: {
 		const allResults = allResultsMetadata.data.map(([path, { metadata, default: content }]) => {
 			const regex = /\/([\w-]+)\.\w+$/;
 			const match = path.match(regex);
-			const id = match ? match[1] : path;
+			const id = slugify(match ? match[1] : path, { lower: true, strict: true });
 			return {
 				id,
 				...metadata,
@@ -35,17 +36,26 @@ function parseSvxFolder<Sch extends z.ZodType>(params: {
 	}
 }
 
+const meterFormatter = new Intl.NumberFormat('en-UK', {
+	style: 'unit',
+	unit: 'meter', // Using 'meter' as the closest available unit
+	unitDisplay: 'narrow'
+});
+
 const projectSchema = z
 	.looseObject({
 		id: z.string(),
 		title: z.string(),
 		seoDescription: z.string().default(''),
-		typology: z.string().default(''),
+		type: z.string().default(''),
 		location: z.string().default(''),
 		status: z.string().default(''),
 		client: z.string().default(''),
-		size: z.string().default(''),
-		date: z.coerce.date().default(new Date()),
+		size: z
+			.number()
+			.transform((val) => (val ? `${meterFormatter.format(val).replace(/m$/, '')}&thinsp;m²` : '-'))
+			.default('-'),
+		pubDate: z.coerce.date().default(new Date()),
 		Content: z.any()
 	})
 	.describe('Project');
@@ -57,5 +67,5 @@ export const projects = parseSvxFolder({
 	schema: projectSchema
 })
 	.filter((project) => !project.hidden)
-	.sort((a, b) => b.date.getTime() - a.date.getTime());
+	.sort((a, b) => a.id.localeCompare(b.id));
 export type ProjectType = (typeof projects)[number];
