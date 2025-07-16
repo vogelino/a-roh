@@ -67,5 +67,5 @@ export const projects = parseSvxFolder({
 	schema: projectSchema
 })
 	.filter((project) => !project.hidden)
-	.sort((a, b) => a.id.localeCompare(b.id));
+	.sort((a, b) => b.id.localeCompare(a.id));
 export type ProjectType = (typeof projects)[number];
