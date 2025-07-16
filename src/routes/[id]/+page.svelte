@@ -39,12 +39,12 @@
 >
 	<div class="flex flex-col justify-center">
 		<h1
-			class="font-headings animate-slide-up-1 mb-1 font-bold text-balance"
+			class="font-headings animate-slide-up-1 mb-2 font-bold text-balance"
 			style={`view-transition-name: project-title-${project.id};`}
 		>
 			{@html project.title}
 		</h1>
-		<div class="animate-slide-up-2 [&>p]:mb-2 [&>p]:text-pretty">
+		<div class="animate-slide-up-2 text-sm [&>p]:mb-2 [&>p]:text-pretty">
 			{@html projectContent}
 		</div>
 		<dl class={cn(`text-muted-foreground mt-8 grid grid-cols-[auto_1fr] font-mono text-xs`)}>
