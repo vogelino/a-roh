@@ -3,7 +3,7 @@ title: LIFT IT UP
 seoDescription: Explore this innovative leisure center renovation in Riehen, where elevated timber trusses transform an existing structure into a transparent community hub. This resource-conscious design creates a seamless connection between community and park.
 type: Leisure Center
 location: Basel, CH
-status: Competition, 5th rank
+status: Competition,<br />5th rank
 client: Riehen
 size: 2100
 pubDate: 2025-07-16

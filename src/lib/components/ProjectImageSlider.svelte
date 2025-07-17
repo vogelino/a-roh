@@ -33,9 +33,9 @@
 	});
 </script>
 
-<div class="p-10 pt-0">
+<div class="pt-0 lg:p-10">
 	<Splide
-		class={cn('bg-background aspect-square max-h-[80vh] w-full', className)}
+		class={cn('bg-background aspect-[3/4] w-full lg:max-h-[80vh]', className)}
 		aria-label={ariaLabel}
 		options={{
 			type: 'slide',
@@ -46,7 +46,8 @@
 			...options,
 			classes: {
 				arrow: cn(
-					'flex size-8 items-center justify-center rounded-full absolute top-1/2 -translate-y-1/2 z-10',
+					'hidden lg:flex',
+					'size-8 items-center justify-center rounded-full absolute top-1/2 -translate-y-1/2 z-10',
 					'bg-background [&_path]:fill-muted-foreground [&_path]:transition-colors opacity-100 p-1.5 cursor-pointer',
 					'[&:hover_path]:fill-foreground [&:focus-visible_pat]:fill-foreground',
 					'hover:bg-muted focus-visible:bg-muted transition-colors',
@@ -69,7 +70,7 @@
 				<enhanced:img
 					src={image.image}
 					alt={`Project image ${index + 1}`}
-					class="aspect-square size-full max-h-[80vh] object-contain object-center"
+					class="aspect-[3/4] size-full object-contain object-center lg:max-h-[80vh]"
 				/>
 			</SplideSlide>
 		{/each}

@@ -12,12 +12,20 @@
 
 	$effect(() => {
 		function updateScrollPercentage() {
-			if (typeof window === 'undefined' || !aEl || !rohEl) return;
+			if (page.url.pathname !== '/' || typeof window === 'undefined' || !aEl || !rohEl) return;
 			const elsWidth = aEl.getBoundingClientRect().width + rohEl.getBoundingClientRect().width + 6;
-			document.body.style.setProperty(
-				'--logoLineWidth',
-				`max(6px, (${(window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100}cqw - ${elsWidth}px))`
+			const aboutEl = document.querySelector('#about');
+			const logoContainerEl = document.querySelector('#logo-container');
+			if (!aboutEl || !logoContainerEl) return;
+			const availableWidth = logoContainerEl.getBoundingClientRect().width - elsWidth;
+			const aboutElHeight = aboutEl.getBoundingClientRect().height;
+			const totalScrollHeight = document.body.scrollHeight - aboutElHeight;
+			const scrollPercentage = Math.max(
+				0,
+				Math.min((window.scrollY / totalScrollHeight) * 100, 100)
 			);
+			const dashSize = interpolate(6, availableWidth, 0, 100, scrollPercentage);
+			document.body.style.setProperty('--logoLineWidth', `${dashSize}px`);
 
 			return requestAnimationFrame(updateScrollPercentage);
 		}
@@ -26,6 +34,19 @@
 
 		return () => fr && cancelAnimationFrame(fr);
 	});
+
+	function interpolate(
+		start: number,
+		end: number,
+		startRange: number,
+		endRange: number,
+		value: number
+	): number {
+		if (value < startRange || value > endRange) return start;
+		const range = endRange - startRange;
+		const progress = (value - startRange) / range;
+		return start + (end - start) * progress;
+	}
 
 	function onLogoClick(event: MouseEvent) {
 		if (page.url.pathname === '/' && href === '#about') {
@@ -49,17 +70,17 @@
 	)}
 	style="view-transition-name: header;"
 >
-	<div class="@container">
+	<div class="@container" id="logo-container">
 		<a
 			bind:this={logoRef}
 			{href}
 			title="a-roh homepage"
-			class="text-background dark:text-foreground inline-flex h-10 -translate-x-4 items-center gap-0.5 rounded-full px-4 font-bold"
+			class="text-background dark:text-foreground flex h-10 w-[calc(100%+2rem)] -translate-x-4 items-center gap-0.5 rounded-full px-4 font-bold"
 			onclick={onLogoClick}
 		>
 			<span>a</span>
 			<span
-				class="bg-background dark:bg-foreground h-[2px] w-[var(--logoLineWidth,6px)] translate-y-px"
+				class="bg-background dark:bg-foreground h-[2px] w-[var(--logoLineWidth,6px)] translate-y-px transition-all duration-75"
 			></span>
 			<span>roh</span>
 		</a>

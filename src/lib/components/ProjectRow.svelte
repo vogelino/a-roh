@@ -20,7 +20,7 @@
 				src={projectThumbnail.image}
 				sizes="160px, 320px"
 				alt={project.title}
-				class="max-h-[50svh] w-full max-w-[320px] object-contain sm:aspect-square"
+				class="w-full object-contain sm:aspect-square lg:max-h-[50svh]"
 			/>
 			<div class="hidden flex-col gap-2 sm:flex lg:contents">
 				<p>{@html project.type}</p>
