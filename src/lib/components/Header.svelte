@@ -12,11 +12,20 @@
 
 	$effect(() => {
 		function updateScrollPercentage() {
-			if (page.url.pathname !== '/' || typeof window === 'undefined' || !aEl || !rohEl) return;
-			const elsWidth = aEl.getBoundingClientRect().width + rohEl.getBoundingClientRect().width + 6;
 			const aboutEl = document.querySelector('#about');
 			const logoContainerEl = document.querySelector('#logo-container');
-			if (!aboutEl || !logoContainerEl) return;
+			if (
+				page.url.pathname !== '/' ||
+				typeof window === 'undefined' ||
+				!aEl ||
+				!rohEl ||
+				!logoContainerEl ||
+				!aboutEl
+			) {
+				document.body.style.setProperty('--logoLineWidth', `6px`);
+				return requestAnimationFrame(updateScrollPercentage);
+			}
+			const elsWidth = aEl.getBoundingClientRect().width + rohEl.getBoundingClientRect().width + 6;
 			const availableWidth = logoContainerEl.getBoundingClientRect().width - elsWidth;
 			const aboutElHeight = aboutEl.getBoundingClientRect().height;
 			const totalScrollHeight = document.body.scrollHeight - aboutElHeight;
