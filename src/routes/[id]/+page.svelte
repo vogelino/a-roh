@@ -33,7 +33,7 @@
 
 <section
 	class={cn(
-		'relative mx-auto max-w-[1440px] px-4 py-6 lg:grid lg:grid-cols-[2fr_5fr] lg:gap-x-12 lg:px-6',
+		'relative mx-auto max-w-[1440px] px-4 lg:grid lg:grid-cols-[2fr_5fr] lg:gap-x-12 lg:px-6',
 		'flex flex-col-reverse gap-12'
 	)}
 >

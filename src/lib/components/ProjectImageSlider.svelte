@@ -33,7 +33,7 @@
 	});
 </script>
 
-<div class="pt-0 lg:p-10">
+<div class="lg:p-10 lg:pt-0">
 	<Splide
 		class={cn('bg-background aspect-[3/4] w-full lg:max-h-[80vh]', className)}
 		aria-label={ariaLabel}

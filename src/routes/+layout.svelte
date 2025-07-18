@@ -7,6 +7,6 @@
 
 <Header />
 
-<main>
+<main class="min-h-[calc(100svh-5.5rem)]">
 	{@render children()}
 </main>
