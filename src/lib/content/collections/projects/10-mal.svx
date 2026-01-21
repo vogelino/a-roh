@@ -1,0 +1,14 @@
+---
+title: MALLEY
+seoDescription: Nestled among the existing cedar trees, the project reimagines steel structures from former industrial warehouses to create a new elementary school. Open and permeable, the school becomes a clear landmark for the neighborhood. The project supports Malley’s transformation while engaging in a sensitive dialogue with the site’s industrial memory.
+type: Primary School
+location: Lausanne, CH
+status: Competition,<br />5th prize
+client: La Fabrique de Malley
+size: 6000
+pubDate: 2026-01-21
+---
+
+Nestled among the existing cedar trees, the project reimagines steel structures from former industrial warehouses to create a new elementary school. Open and permeable, the school becomes a clear landmark for the neighborhood. The project supports Malley’s transformation while engaging in a sensitive dialogue with the site’s industrial memory.
+
+In collaboration with detritus. and co-struct
