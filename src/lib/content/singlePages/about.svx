@@ -1,6 +1,6 @@
 ---
 title: Who we are
-seoDescription: Architecture practice based in Paris and Basel founded in 2024 by Agathe Sautet and Matthieu Friedli.
+seoDescription: Architecture practice based in Paris and Lausanne founded in 2024 by Agathe Sautet and Matthieu Friedli.
 addresses:
   - label: Paris
     line1: 14 rue de l’Atlas
@@ -24,18 +24,19 @@ Together, they founded a-roh in 2024.
 
 The main focus on their work is on rehabilitation of existing buildings and public facilities. Their practice explores the possibilities of creating space through specific materials at multiple scales, from furniture to territorial projects.
 
-Previously with us : Juliette Fabbri, Lucie Dumoulin
+Previously with us : Juliette Fabbri, Lucie Dumoulin, Filip Mesko
 
 SIA et Dipl. ing. HMONP – Ordre des architectes n° S24041
 
 ## teaching & lectures
 
-- Student-assistant, Studio Bruther EPFL, 2018-2019
-- Design studio, S6 P32 at ENSA Versailles, 2025-Now
+- Design studio, P21 and P32 at ENSA Versailles, 2025-Now
 - Studio director, at ALICE EPFL, 2024-Now
-- Design studio, S6 P32 at ENSA Marseille, 2024-2025
+- Design studio, P32 at ENSA Marseille, 2024-2025
+- Guest critic at ENSA Paris-Est, 06.2026
 - Guest critic at ENSA Malaquais, 03.2025
 - Guest critic at ENSA Lille, 06.2024
+- Student-assistant, Studio Bruther EPFL, 2018-2019
 
 ## exhibitions & publications
 
@@ -49,6 +50,7 @@ SIA et Dipl. ing. HMONP – Ordre des architectes n° S24041
 - [Atelier Alexandre Puech](https://alexandrepuech.fr) (Paris)
 - [ONOMIAU / Noël Picaper](https://onomiau.com/) (Paris)
 - [detritus.](https://detritus.ch/) (Lausanne)
+- [Pierre Marmy](https://pierremarmy.ch/) (Zürich/Lausanne)
 
 ## credits & copyright
 

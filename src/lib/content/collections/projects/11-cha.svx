@@ -1,0 +1,14 @@
+---
+title: SOLARIS
+seoDescription: The city of Paris is renovating its education facilities to adapt to new climatic conditions. In this densely populated metropolis, many school buildings have roofs that are accessible during breaks, making the habitability of these toiture-terrasses a major challenge. Reducing urban heat islands, managing roof albedo, and recovering and/or infiltrating rainwater are now key constraints shaping these transformations.
+type: Photovoltaic Canopy
+location: Paris, FR
+status: Completed
+client: La Ville de Paris
+size: 300
+pubDate: 2026-01-21
+---
+
+The city of Paris is renovating its education facilities to adapt to new climatic conditions. In this densely populated metropolis, many school buildings have roofs that are accessible during breaks, making the habitability of these toiture-terrasses a major challenge. Reducing urban heat islands, managing roof albedo, and recovering and/or infiltrating rainwater are now key constraints shaping these transformations.
+
+Photographs : Pierre Marmy
